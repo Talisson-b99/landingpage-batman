@@ -1,0 +1,414 @@
+header {
+  background-color: transparent;
+}
+
+.menu {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 72px;
+}
+@media screen and (max-width: 1024px) {
+  .menu {
+    padding: 32px 12px;
+  }
+}
+.menu .menu-nav ul {
+  display: felx;
+  display: flex;
+  gap: 72px;
+}
+.menu .menu-nav li {
+  position: relative;
+}
+.menu .menu-nav a {
+  color: #fff;
+  font-size: 16px;
+  display: block;
+}
+.menu .menu-nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  transition: 0.7s ease;
+}
+.menu .menu-nav a:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: linear-gradient(90deg, #edd602 0%, #fff 100%);
+}
+@media screen and (max-width: 1024px) {
+  .menu .menu-nav {
+    display: none;
+  }
+}
+
+.arrow {
+  font-size: 150px;
+  color: rgba(255, 255, 255, 0.474);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+.arrow i {
+  border: 5px solid yellow;
+  border-radius: 999px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 20px;
+  animation: moveTo 0.5s ease-in-out alternate infinite;
+  box-shadow: 20px 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveTo {
+  from {
+    bottom: 20px;
+  }
+  to {
+    bottom: 30px;
+  }
+}
+.background {
+  background-image: url("../assets/bg-main.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section-whoIsBatman {
+  padding: 132px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 132px;
+}
+@media screen and (max-width: 1024px) {
+  .section-whoIsBatman {
+    gap: 62px;
+    padding-block: 62px 62px;
+  }
+}
+.section-whoIsBatman img {
+  max-height: 710px;
+  max-width: 390px;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .section-whoIsBatman img {
+    max-height: 400px;
+    min-width: 300px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.section-whoIsBatman h2 {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 24px;
+  text-wrap: nowrap;
+}
+.section-whoIsBatman p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2%;
+  color: rgba(255, 255, 255, 0.85);
+}
+.section-whoIsBatman p + p {
+  margin-top: 12px;
+}
+.section-whoIsBatman .content-1,
+.section-whoIsBatman .content-2 {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+.section-whoIsBatman .content-1 .content,
+.section-whoIsBatman .content-2 .content {
+  width: 555px;
+  flex: 1;
+}
+@media screen and (max-width: 1024px) {
+  .section-whoIsBatman .content-1,
+  .section-whoIsBatman .content-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+  }
+  .section-whoIsBatman .content-1 .content,
+  .section-whoIsBatman .content-2 .content {
+    width: 100%;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .section-whoIsBatman .content-1 .content-2 .content,
+  .section-whoIsBatman .content-2 .content-2 .content {
+    order: 2;
+  }
+  .section-whoIsBatman .content-1 .content-2 .img,
+  .section-whoIsBatman .content-2 .content-2 .img {
+    order: 1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-whoIsBatman .content-2 .content {
+    order: 2;
+  }
+  .section-whoIsBatman .content-2 .img {
+    order: 1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-whoIsBatman h2 {
+    font-size: 3rem;
+  }
+  .section-whoIsBatman p {
+    font-size: 0.875rem;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #161616;
+}
+.main h1 {
+  font-size: 200px;
+  color: #edd602;
+}
+.main .top {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  background-color: #000;
+  z-index: 999;
+  overflow: hidden;
+}
+.main .top .text-top {
+  position: absolute;
+  top: 75%;
+  font-family: "Roboto";
+  transform: translate(0, 50px);
+  line-height: 50%;
+}
+.main .bottom {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: absolute;
+  overflow: hidden;
+}
+.main .bottom .text-bottom {
+  position: absolute;
+  top: -25%;
+  transform: translate(0, -50px);
+  font-family: "Roboto";
+  line-height: 150%;
+}
+@media screen and (max-width: 1024px) {
+  .main h1 {
+    font-size: 100px;
+  }
+}
+
+.container {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.slide {
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 50px;
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: inline-block;
+  box-shadow: 0 30px 50px #505050;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: 0.5s;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.item:nth-child(3) {
+  left: 65%;
+}
+
+.item:nth-child(4) {
+  left: calc(65% + 220px);
+}
+
+.item:nth-child(5) {
+  left: calc(65% + 440px);
+}
+
+.item:nth-child(n+6) {
+  left: calc(65% + 660px);
+  opacity: 0;
+}
+
+.item:nth-child(2) .content {
+  display: block;
+  z-index: 999;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 90px;
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.viloes {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 132px 90px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.viloes h3 {
+  font-size: 72px;
+  color: #fff;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.viloes .item-accordion {
+  width: 13vw;
+  height: 85vh;
+  background-position: center;
+  background-size: 75vh;
+  margin: 1vw;
+  border-radius: 5vw;
+  display: inline-block;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .viloes {
+    padding: 62px 62px;
+  }
+  .viloes h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 525px) {
+  .viloes h3 {
+    text-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .viloes .item-accordion {
+    width: 13vw;
+    height: 55vh;
+  }
+}
+
+canvas#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+}
+
+.border {
+  border: 2px solid pink;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Metal Mania", system-ui;
+  background-color: #161616;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */

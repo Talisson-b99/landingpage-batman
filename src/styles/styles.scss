@@ -1,0 +1,40 @@
+@mixin responsive() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@import "../partials/colors";
+@import "../partials/menu";
+@import "../partials/layout";
+@import "../partials/canvas";
+
+.border {
+  border: 2px solid pink;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Metal Mania", system-ui;
+  background-color: $black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

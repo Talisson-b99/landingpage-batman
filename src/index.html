@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="height: 100vh; width: 100%; background-color: 000"></div>
+    <div class="arrow">
+      <i class="fa-solid fa-circle-arrow-down"></i>
+    </div>
+    <!-- =============CANVAS============= -->
+    <!-- =============BACKGROUND============= -->
+    <div class="background">
+      <canvas id="canvas"></canvas>
+    </div>
+    <!-- =============HEADER============= -->
+    <header>
+      <div class="menu">
+        <div class="logo">
+          <img src="./assets/logo-menu.svg" alt="" />
+        </div>
+        <div class="menu-nav">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Whos is Batman</a>
+            </li>
+            <li>
+              <a href="">Photos</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- =============SECTION QUEM É O BATMAN============= -->
+    <section class="section-whoIsBatman">
+      <div class="content-1">
+        <div class="img">
+          <img src="./assets/image 8.png" alt="" />
+        </div>
+        <div class="content">
+          <h2>Quem é o Batman?</h2>
+          <p>
+            Batman, também conhecido como Bruce Wayne, é um dos personagens mais
+            emblemáticos dos quadrinhos, criado por Bob Kane e Bill Finger e
+            publicado pela DC Comics. O que o torna tão cativante não são apenas
+            suas habilidades de combate e sua inteligência incomparável, mas
+            também sua humanidade.
+          </p>
+          <p>
+            Bruce Wayne, um bilionário filantropo de Gotham City, testemunhou o
+            assassinato de seus pais quando era criança. Essa tragédia pessoal
+            moldou sua determinação em combater o crime e proteger os inocentes.
+            Assim, ele se tornou Batman, o símbolo do medo para os criminosos.
+          </p>
+        </div>
+      </div>
+      <div class="content-2">
+        <div class="content">
+          <h2>A Origem da Lenda</h2>
+          <p>
+            Batman, também conhecido como Bruce Wayne, é um dos personagens mais
+            emblemáticos dos quadrinhos, criado por Bob Kane e Bill Finger e
+            publicado pela DC Comics. O que o torna tão cativante não são apenas
+            suas habilidades de combate e sua inteligência incomparável, mas
+            também sua humanidade.
+          </p>
+          <p>
+            Bruce Wayne, um bilionário filantropo de Gotham City, testemunhou o
+            assassinato de seus pais quando era criança. Essa tragédia pessoal
+            moldou sua determinação em combater o crime e proteger os inocentes.
+            Assim, ele se tornou Batman, o símbolo do medo para os criminosos.
+          </p>
+        </div>
+        <div class="img">
+          <img src="./assets/image 10.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =============SECTION VIOLÕES============= -->
+    <section class="viloes">
+      <div>
+        <h3>Conheça os Vilões Icônicos do Batman</h3>
+      </div>
+      <div>
+        <div
+          class="item-accordion"
+          style="background-image: url('./assets/coringa.png')"
+        ></div>
+        <div
+          class="item-accordion"
+          style="
+            background-image: url('./assets/duascaras.png');
+            background-position: center;
+          "
+        ></div>
+        <div
+          class="item-accordion"
+          style="background-image: url('./assets/inimigos.png')"
+        ></div>
+        <div
+          class="item-accordion"
+          style="background-image: url('./assets/pinguim.png')"
+        ></div>
+        <div
+          class="item-accordion"
+          style="background-image: url('./assets/espantalho.png')"
+        ></div>
+      </div>
+    </section>
+
+    <!-- =============SECTION PHOTOS============= -->
+    <section>
+      <div class="main" id="main">
+        <div class="top" id="top">
+          <h1 class="text-top">BATMAN</h1>
+        </div>
+
+        <div class="container">
+          <div class="slide" id="slide">
+            <div
+              class="item"
+              style="background-image: url(./assets/imagem1.png)"
+            ></div>
+
+            <div
+              class="item"
+              style="background-image: url(./assets/imagem2.png)"
+            ></div>
+
+            <div
+              class="item"
+              style="background-image: url(./assets/imagem3.png)"
+            ></div>
+
+            <div
+              class="item"
+              style="background-image: url(./assets/imagem4.png)"
+            ></div>
+
+            <div
+              class="item"
+              style="background-image: url(./assets/imagem5.png)"
+            ></div>
+
+            <div
+              class="item"
+              style="background-image: url(./assets/imagem6.png)"
+            ></div>
+          </div>
+
+          <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+        <div class="bottom" id="bottom">
+          <h1 class="text-bottom">BATMAN</h1>
+        </div>
+      </div>
+    </section>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
