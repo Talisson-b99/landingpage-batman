@@ -198,3 +198,10 @@ items.forEach((item, i) => {
   item.clicked = false;
   item.addEventListener("click", () => expand(item, i));
 });
+
+const arrow = document.querySelector(".arrow");
+gsap.fromTo(
+  arrow,
+  { top: "-100%", opacity: 0 },
+  { duration: 5, top: "0", opacity: 1 }
+);
